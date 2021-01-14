@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html >
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" href="./image/exam.png">
+    <link rel="stylesheet" type="text/css" href="https://www.fontstatic.com/f=kawkab-bold" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>أيام الاسبوع</title>
+    
+</head>
+<body>
+<div><video autoplay muted loop id="myVideo">
+  <source src="./image/sp.mov" type="video/mp4" >
+</video></div>
+
+<div class="flex-container"> 
+  <div class ="login"><button class="login" onclick="document.getElementById('id01').style.display='block'">تسجيل الدخول</button>
+    <div id="id01" class="modal">
+      <span onclick="document.getElementById('id01').style.display='none'" 
+    class="close" title="Close Modal">&times;</span>
+          <form class="modal-content animate" action="/action_page.php">
+        <div class="container">
+          <label for="uname"><b>اسم المتعلم</b></label>
+          <input type="text" placeholder="Enter Username" name="uname" required>
+          <label for="psw"><b>كلمة السر</b></label>
+          <input type="password" placeholder="Enter Password" name="psw" required>
+          <button type="submit">تسجيل الدخول</button>
+          <label>
+            <input type="checkbox" checked="checked" name="remember"> تذكرني
+          </label>
+        </div>
+        <div class="container" style="background-color:white">
+          <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">الغاء</button>
+          <span class="psw">نسيت <a href="#">كلمة المرور؟</a></span>
+        </div>
+      </form>
+    </div>
+  </div>
+      <!--  اضافة شريط التنقل العلوي باستخدام القوائم -->
+    <ul class="menu"> 
+     <li><a href="index.html">الرئيسية</a></li>
+     <li><a href="/الكتب.html">الكتب</a></li>
+     <li><a href="/الدورات.html">الدورات</a></li>
+     <li class="nav-item dropdown">
+        <div class="dropdown">
+            <button class="dropbtn"><img src="./image/more.png" width="30 px" > </button>
+            <div class="dropdown-content">
+              <a href="/اختبارأيام الاسبوع.html">اختبار أيام الاسبوع</a>
+            </div>
+          </div>
+     </li>
+    </ul>
+   <div class="logo">
+    <img class="myimage" src="./image/flag.png"  >  
+   </div>   
+</div> 
+
+<div class="test">
+  <div class="test1">
+    <h2>يوم الاحد ؟</h2>
+    <ul class="choose">
+      <li ><button onclick="test1d()"id="c1"class="answers">El domingo</button> </li>   
+      <li > <button onclick="test1d()"id="c2"class="answers"> El viernes</button></li>
+      <li ><button onclick="test1d()"id ="c3"class="answers"> El martes</button></li>
+    </ul> 
+
+  </div>
+</div>
+<div class="test">
+  <div class="test1">
+    <h2>يوم الخميس ؟</h2>
+    <ul class="choose">
+      <li ><button onclick="test2()"id="c4"class="answers">El lunes</button> </li>   
+      <li > <button onclick="test2()"id="c5"class="answers"> El martes</button></li>
+      <li ><button onclick="test2()"id ="c6"class="answers"> El jueves</button></li>
+    </ul> 
+
+  </div>
+  <div class="test">
+    <div class="test1">
+      <h2>يوم الاثنين ؟</h2>
+      <ul class="choose">
+        <li ><button onclick="test3()"id="c7"class="answers">El viernes</button> </li>   
+        <li > <button onclick="test3()"id="c8"class="answers"> El sábado</button></li>
+        <li ><button onclick="test3()"id ="c9"class="answers"> El lunes</button></li>
+      </ul> 
+  
+    </div>
+
+
+
+</div>
+
+
+
+
+
+
+ <div class="pageend">جميع الحقوق محفوظة ٢٠٢١@</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="./index.js"></script>
+</body>
+</html>

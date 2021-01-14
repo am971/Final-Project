@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html >
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="./image/flag.png">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" type="text/css" href="https://www.fontstatic.com/f=kawkab-bold" />
+    <script src="https://kit.fontawesome.com/5cff7069f0.js" crossorigin="anonymous"></script>
+
+    <title>الرئيسية</title>
+    
+</head>
+<body onload="myFunction()">
+  <div id="page" style="display:none;">
+<div><video autoplay muted loop id="myVideo">
+  <source src="./image/sp.mov" type="video/mp4" >
+</video></div>
+
+<div class="flex-container"> 
+  <div class ="login"><button class="login" onclick="document.getElementById('id01').style.display='block'">تسجيل الدخول</button>
+    <div id="id01" class="modal">
+      <span onclick="document.getElementById('id01').style.display='none'" 
+    class="close" title="Close Modal">&times;</span>
+          <form class="modal-content animate" action="/action_page.php">
+        <div class="container">
+          <label for="uname"><b>اسم المتعلم</b></label>
+          <input type="text" placeholder="Enter Username" name="uname" required>
+          <label for="psw"><b>كلمة السر</b></label>
+          <input type="password" placeholder="Enter Password" name="psw" required>
+          <button type="submit">تسجيل الدخول</button>
+          <label>
+            <input type="checkbox" checked="checked" name="remember"> تذكرني
+          </label>
+        </div>
+        <div class="container" style="background-color:white">
+          <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">الغاء</button>
+          <span class="psw">نسيت <a href="#">كلمة المرور؟</a></span>
+        </div>
+      </form>
+    </div>
+  </div>
+      <!--  اضافة شريط التنقل العلوي باستخدام القوائم -->
+    <ul class="menu"> 
+     <li><a href="/index.html">الرئيسية</a></li>
+     <li><a href="/الكتب.html">الكتب</a></li>
+     <li><a href="/الدورات.html">الدورات</a></li>
+     <li class="nav-item dropdown">
+        <div class="dropdown">
+            <button class="dropbtn"><img src="./image/more.png" width="30 px" > </button>
+            <div class="dropdown-content">
+              <a href="/اختبارأيام الاسبوع.html"> اختبار أيام الاسبوع</a>
+            </div>
+          </div>
+     </li>
+    </ul>
+   <div class="logo">
+    <img class="myimage" src="./image/flag.png"  >  
+   </div>   
+</div> 
+<div class ="about">
+ <div> 
+  <h2 class="tracking-in-expand"> عن الموقع</h2> 
+  <p class="abouttext">فكرة الموقع جمع المصادر المتوفرة لتعلم اللغة الاسبانية من كتب و دورات ٠٠٠٠ 
+  و عرضها لكي يختار المتعلم للغة المصدر المناسب لمستواه</p>
+ </div>
+</div> 
+<div class ="features">
+  <div> 
+   <h2 class="tracking-in-expand"> مميزات الموقع</h2> 
+   <ul class="featureslist">
+     <li><img src="./image/rating (1).png" width="100px" > <br><br>
+      تقييم المصدر
+    </li>
+    <li><img src="./image/pencil.png" width="100px"> <br> <br>
+      مراجعة المصدر
+    </li>
+    <li><img src="./image/clock.png" width="100px"> <br><br>
+    توفير الوقت
+    </li>
+   </ul>
+  </div>
+ </div> 
+ <div class="pageend">جميع الحقوق محفوظة ٢٠٢١@</div>
+</div>
+ <div id="loader">
+  <img src="./image/25.gif" >
+ </div>
+
+
+
+
+<script src="./index.js"></script>
+</body>
+</html>
